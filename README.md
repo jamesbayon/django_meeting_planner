@@ -18,17 +18,36 @@ created meetings app
 
 add meetings to INSTALLED_APPS
 
-created Meeting class with title varchar and date ate in meeting.models
+created Meeting class with title, date, start, duration in meeting.models
+
+added admin.site.register(Meeting) in meetings.admin
+
+added __self__ in Meeting class (for admin view)
 
 `python manage.py makemigrations`
 
 `python manage.py migrate`
 
-added admin.site.register(Meeting) in meetings.admin
+`python manage.py createsuperuser`
+
+### Part 3
+
+created Room class with name, floor, room number in meetings.model
+
+add room object foreign key in Meetings class
+
+added admin.site.register(Room) in meetings.admin
+
+added __self__ in Meeting class (for admin view)
+
+cleaned db and migrations
+
+`python manage.py makemigrations`
+
+`python manage.py migrate`
 
 `python manage.py createsuperuser`
 
-added Meetings in admin interface
+### Part 4
 
-### Part 3
 
