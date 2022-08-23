@@ -50,4 +50,13 @@ cleaned db and migrations
 
 ### Part 4
 
+added templates folder for the html files of the website app
+
+added templates folder for the html files of the meetings app
+
+updated views for the template html files
+
+added urlpatterns
+
+get_object_or_404 for meeting detail view
 
