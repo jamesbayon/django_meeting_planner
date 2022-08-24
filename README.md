@@ -1,5 +1,20 @@
 # Django Sample Meeting Planner App
 
+Meeting Planner App
+
+Created a meeting planner application where the user can view the list of meetings and its details as well as the rooms available.
+
+The user can also create a new meeting with the form which has some validation.
+
+template inheritance, static files, etc. were used in this app.
+
+Here are the sample screenshots:
+
+<img src="./readme_images/meeting-planner-home.JPG" alt="Polls_Index_Image" width="400" style="display:block"/>
+<img src="./readme_images/meeting-detail.JPG" alt="Poll_Choices_Image" width="400" style="display:block"/>
+<img src="./readme_images/room-list.JPG" alt="Poll_Vote_Results_Image" width="400" style="display:block"/>
+<img src="./readme_images/new-meeting-form.JPG" alt="Poll_Vote_Results_Image" width="400" style="display:block"/>
+
 guide source:
 
 https://www.pluralsight.com/courses/django-getting-started
