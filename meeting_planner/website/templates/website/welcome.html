@@ -7,6 +7,12 @@
 <body>
     <h1>Welcome to the Meeting Planner!</h1>
     <p>This is a demo application following the guide from pluralsight Django:Getting Started.</p>
-    <p>There are currently {{ num_meetings }} meeting/s in the database.</p>
+    <h2>Meetings</h2>
+    <ul>
+        {% for meeting in meetings %}
+        <li><a href="{% url 'detail' meeting.id %}">{{ meeting.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <p><a href="{% url 'rooms' %}">Rooms List</a></p>
 </body>
 </html>

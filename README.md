@@ -60,3 +60,19 @@ added urlpatterns
 
 get_object_or_404 for meeting detail view
 
+### Part 5
+
+meetings app link building
+
+added meetings.urls and urlpatterns
+
+modified meeting planner urlpatterns path for meetings.urls
+
+added rooms list template
+
+modified welcome template
+
+used template variables and loops in template
+
+### Part 6
+
