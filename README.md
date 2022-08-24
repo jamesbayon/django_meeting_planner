@@ -104,6 +104,10 @@ added images for the pages
 
 ##### Add UserInteraction witn ModelForms
 
+added form so that user can create new meeting
 
+create new html, created view.new, added in urlpatterns
+
+added validation in form
 
 
