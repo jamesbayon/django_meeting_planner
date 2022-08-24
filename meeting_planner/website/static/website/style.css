@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    color: cornflowerblue;
+    background-color: floralwhite;
+}
+
+body div {
+    display: inline-block;
+}
+
+#content-image {
+    margin-top: 40px;
+    vertical-align: top;
+}
+
+#content-container{
+    margin: 0 0 0 30px;
+    vertical-align: top;
+}

@@ -5,6 +5,9 @@ guide source:
 https://www.pluralsight.com/courses/django-getting-started
 
 ### Part 1
+
+##### Starting a Django Project
+
 created website app
 
 add website to INSTALLED_APPS
@@ -14,6 +17,9 @@ added some simple views in website
 mapped views to meeting_planner urls
 
 ### Part 2
+
+##### Creating simple web page
+
 created meetings app
 
 add meetings to INSTALLED_APPS
@@ -31,6 +37,8 @@ added __self__ in Meeting class (for admin view)
 `python manage.py createsuperuser`
 
 ### Part 3
+
+##### Setting up a Data Model
 
 created Room class with name, floor, room number in meetings.model
 
@@ -50,6 +58,8 @@ cleaned db and migrations
 
 ### Part 4
 
+##### Combining Model, View, and Template
+
 added templates folder for the html files of the website app
 
 added templates folder for the html files of the meetings app
@@ -61,6 +71,8 @@ added urlpatterns
 get_object_or_404 for meeting detail view
 
 ### Part 5
+
+##### Urls and Link Building
 
 meetings app link building
 
@@ -75,4 +87,23 @@ modified welcome template
 used template variables and loops in template
 
 ### Part 6
+
+##### Templates, Styling, and Static Content
+
+created static content for meeting app
+
+applying CSS to welcome page
+
+template inheritance
+
+modified htmls to inherit base - modified to only retain only content
+
+added images for the pages
+
+### Part 7
+
+##### Add UserInteraction witn ModelForms
+
+
+
 

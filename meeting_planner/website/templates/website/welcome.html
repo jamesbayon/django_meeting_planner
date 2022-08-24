@@ -1,18 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome!</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
     <h1>Welcome to the Meeting Planner!</h1>
     <p>This is a demo application following the guide from pluralsight Django:Getting Started.</p>
-    <h2>Meetings</h2>
-    <ul>
-        {% for meeting in meetings %}
-        <li><a href="{% url 'detail' meeting.id %}">{{ meeting.title }}</a></li>
-        {% endfor %}
-    </ul>
-    <p><a href="{% url 'rooms' %}">Rooms List</a></p>
-</body>
-</html>
+    <div id="content-image">
+        <img src="{% static 'website/calendar.png' %}" width="100px">
+    </div>
+    <div id="content-container">
+        <h2>Meetings</h2>
+        <ul>
+            {% for meeting in meetings %}
+            <li><a href="{% url 'detail' meeting.id %}">{{ meeting.title }}</a></li>
+            {% endfor %}
+        </ul>
+        <p><a href="{% url 'rooms' %}">Rooms List</a></p>
+    </div>
+{% endblock %}

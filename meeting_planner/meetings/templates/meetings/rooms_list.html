@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rooms</title>
-</head>
-<body>
-    <h1>Here are the list of the Rooms</h1>
-    <ul>
-        {% for room in rooms %}
-        <li>Room: {{ room.name }}, Floor: {{ room.floor_number }}, Room #: {{ room.room_number }}</li>
-        {% endfor %}
-    </ul>
-    <p><a href="{% url 'welcome' %}">Home</a></p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Rooms{% endblock %}
+
+{% block content %}
+    <div id="content-image">
+        <img src="{% static 'website/meeting-room.png' %}" width="100px">
+    </div>
+    <div id="content-container">
+        <h1>Here are the list of the Rooms</h1>
+        <ul>
+            {% for room in rooms %}
+            <li>Room: {{ room.name }}, Floor: {{ room.floor_number }}, Room #: {{ room.room_number }}</li>
+            {% endfor %}
+        </ul>
+        <p><a href="{% url 'welcome' %}">Home</a></p>
+    </div>
+{% endblock %}
